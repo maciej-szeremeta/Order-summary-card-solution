@@ -1,0 +1,150 @@
+.page {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-modal {
+  background-color: var(--veryPaleBlueColor);
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 3px 32px 27px -40px rgba(31, 47, 86, 0.3);
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 2rem;
+}
+.header__image {
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.text__title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 1rem 0;
+  color: var(--darkBlueColor);
+}
+.text__description {
+  margin: 1rem 48px;
+  color: var(--desaturatedBlueColor);
+}
+
+.plan {
+  border-radius: 15px;
+  margin: 1.5rem 48px;
+  padding: 1.4rem 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(224, 232, 255, 0.3);
+}
+.plan__link {
+  color: var(--brightBlueColor);
+  font-weight: 700;
+  transition: 0.6s;
+}
+.plan__link:hover {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.8);
+}
+.plan-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.plan-info__image {
+  margin-right: 16px;
+}
+
+.annual-plane__title {
+  color: var(--darkBlueColor);
+  font-variant: 900;
+  margin-bottom: 0.2rem;
+}
+.annual-plane__price {
+  color: var(--desaturatedBlueColor);
+}
+
+.order-modal__button {
+  display: block;
+  border-radius: 15px;
+  width: 354px;
+  border: none;
+  outline: none;
+  padding: 1rem 24px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.order-modal__button--payment {
+  background-color: var(--brightBlueColor);
+  color: var(--paleBlueColor);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 32px 32px -20px rgba(31, 47, 86, 1);
+  transition: 0.5s;
+}
+.order-modal__button--payment:hover {
+  background-color: rgba(56, 41, 224, 0.8);
+}
+
+.order-modal__button--cancel {
+  background-color: transparent;
+  color: var(--desaturatedBlueColor);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  transition: 0.5s;
+}
+
+.order-modal__button--cancel:hover {
+  color: var(--darkBlueColor);
+}
+
+@media (max-width: 375px) {
+  .page {
+    background-image: url("/images/pattern-background-mobile.svg");
+  }
+  .order-modal {
+    width: 320px;
+  }
+  .text__title {
+    font-size: 1.5rem;
+  }
+  .text__description {
+    margin: 1rem 24px;
+  }
+
+  .plan {
+    margin: 1.5rem 24px;
+    padding: 1.4rem 12px;
+  }
+  .plan__link {
+    font-size: 0.85rem;
+  }
+  .order-modal__button {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .order-modal__button {
+    width: 272px;
+    padding: 1rem 12px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}
