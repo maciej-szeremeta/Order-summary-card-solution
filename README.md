@@ -76,7 +76,7 @@ In the next task, I will focus on using the SCSS preprocessor. The SCSS preproce
 
 ### Useful resources
 
-- [CSS variables](https://en.bem.info/methodology/css/) - This page helped me understand how BEM.
+- [BEM](https://en.bem.info/methodology/css/) - This page helped me understand how BEM.
 
 ## Author
 
